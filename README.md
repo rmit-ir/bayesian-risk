@@ -5,6 +5,8 @@ Reproducible parts of the paper will be released in stages, as they are
 refactored out of system-specific bash/awk/R/python hacks from past papers
 and workarounds for lacking root access on shared compute resources.
 
+The code at the moment is currently a work-in-progress.
+
 ### Citation
 
 If you use this code in a research setting, please consider citing the paper:
@@ -21,19 +23,22 @@ The part of our paper that is interesting to most researchers is the capacity
 to draw inferences between a champion, set of challengers, and artefact systems.
 We aim to release this part first as an MVP, and leave risk-adjusted score 
 explorations to later stages.
-More specifically, we look at reproducing Figure 4 in the SIGIR paper.
+More specifically, we look at providing the functionality to produce figures
+like Figure 4 in the SIGIR paper.
 
 ## Project Structure
 
-The project structure closely follows the SIGIR 2019 [codebase](https://github.com/julian-urbano/sigir2019-statistical) 
+The project is structured similarly to the SIGIR 2019 [codebase](https://github.com/julian-urbano/sigir2019-statistical) 
 for the paper "Statistical Significance Testing in Information Retrieval: 
 An Empirical Analysis of Type I, Type II and Type III Errors" from @julian-urbano et. al.
 
-* `./doit.sh` executes the simulation, edit this file based on your needs.
-* `data/` contains input data files, like the system AP scores for all artefact, challenger and champion systems.
-* `output/` contains generated output files.
+Run `./install.sh` to check that you have all of the required R libraries installed,
+and if not, it will install the libraries listed in in `install.R`.
+
 * `R/` contains the source code in R.
-* `scratch/` contains temporary files generated in the process.
+* `R/run_tests.sh` executes the tests and the simulation, which has examples on how to use the code.
+* `data/` contains input data files, like the system AP scores for all artefact, challenger and champion systems.
+* `output/` contains generated output files (none so far).
 
 ## System-Specific Workarounds
 
