@@ -1,9 +1,10 @@
 # Bayesian Inferential Risk Evaluation On Multiple IR Systems
 
+<img align="right" src="images/twitter-poster.gif" 
+     alt="Animated Twitter Poster Containing Slides from Research Paper"/>
+
 This is repository for the 2020 SIGIR paper "Bayesian Inferential
 Risk Evaluation On Multiple IR Systems".
-
-![Animated Twitter Poster Containing Slides from Research Paper](images/twitter-poster.gif)
 
 Reproducible parts of the paper will be released in stages, as they are 
 refactored out of system-specific bash/awk/R/python hacks from past papers
