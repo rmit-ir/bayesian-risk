@@ -1,5 +1,7 @@
 # Install all required packages for this example
-required_packages <- c("devtools", "testthat", "rstanarm", "dplyr", "shinystan", "stringr", "bayestestR")
+required_packages <- c("devtools", "testthat", "rstanarm", "dplyr", 
+                       "shinystan", "stringr", "bayestestR")
+
 installed_packages <- installed.packages()[,1]
 to_install <- setdiff(required_packages, installed_packages)
 

@@ -1,4 +1,4 @@
-source("../compute_cis.R", chdir = TRUE)
+source("../compute_cis.R", chdir=TRUE)
 library(testthat)
 
 # Nondeterministic tests are generally a very bad idea.
@@ -7,7 +7,7 @@ library(testthat)
 # and that model weights are irrelevant.
 
 do_sim <- function(data_file) {
-    model <- compute_bayesian_model(data_file)
+    model <- compute_bayesian_model(data_file, TRUE)
 
     system_subset <- c("Champion", "Chal. 1", "Chal. 2", "Chal. 3", "Chal. 4")
     system_cis <- compute_system_cis(model, system_subset) 
@@ -17,6 +17,9 @@ do_sim <- function(data_file) {
 
     return(c(chal4_left_fence, champ_right_fence))
 }
+
+# TODO: write tests to ensure that errors are thrown when
+# TODO: posterior predictive checks fail
 
 test_that("robust04 systems", {
     result <- do_sim("../../data/rb04_data.csv") 
