@@ -1,11 +1,13 @@
+# Bayesian Inferential Risk Evaluation On Multiple IR Systems
+
 This is repository for the 2020 SIGIR paper "Bayesian Inferential
 Risk Evaluation On Multiple IR Systems".
+
+![Animated Twitter Poster Containing Slides from Research Paper](images/twitter-poster.gif)
 
 Reproducible parts of the paper will be released in stages, as they are 
 refactored out of system-specific bash/awk/R/python hacks from past papers
 and workarounds for lacking root access on shared compute resources.
-
-The code at the moment is currently a work-in-progress.
 
 ### Citation
 
@@ -21,10 +23,10 @@ New York, NY, USA, 10 pages. https://doi.org/10.1145/3397271.3401033
 
 The part of our paper that is interesting to most researchers is the capacity
 to draw inferences between a champion, set of challengers, and artefact systems.
-We aim to release this part first as an MVP, and leave risk-adjusted score 
-explorations to later stages.
-More specifically, we look at providing the functionality to produce figures
-like Figure 4 in the SIGIR paper.
+This has been released as an MVP, and we leave risk-adjusted score explorations 
+to later stages.
+More specifically, we provide the functionality to produce figures like Figure 
+4 in our SIGIR paper.
 
 ## Project Structure
 
