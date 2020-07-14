@@ -65,12 +65,10 @@ make_topics_plot <- function(dataset, model) {
            height=3, device=cairo_pdf)
 }
 
+# Generate graphs for each corpus
 for (dataset in c("rb04", "trec17", "trec18")) {
-    # TODO: Set strict to true after testing
     model <- compute_bayesian_model(paste0("../data/", dataset, "_data.csv"), 
-                                    FALSE)
+                                    TRUE)
     make_systems_plot(dataset, model)
     make_topics_plot(dataset, model)
 }
-
-

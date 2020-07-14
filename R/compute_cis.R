@@ -8,16 +8,11 @@ require(shinystan)
 
 # file_path, which contains system and topic scores
 compute_bayesian_model <- function(file_path, strict) {
-    # Original settings
-    #chains <- 12
-    #cores <- 2
-    #iter <- 12000
-    #adapt_delta <- 0.9999
-
-    chains <- 2
+    chains <- 12
     cores <- 2
-    iter <- 2000
-    adapt_delta <- 0.9
+    iter <- 12000
+    adapt_delta <- 0.9999
+
     model <- .run_mcmc(file_path, chains, cores, iter, adapt_delta)
 
     # if we're in strict mode, we want to run sanity checks
