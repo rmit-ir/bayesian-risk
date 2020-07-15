@@ -39,7 +39,8 @@ Run `./install.sh` to check that you have all of the required R libraries instal
 and if not, it will install the libraries listed in in `install.R`.
 
 * `R/` contains the source code in R.
-* `R/run_tests.sh` executes the tests and the simulation, which has examples on how to use the code.
+* `run_tests.sh` executes the tests and the simulation, where the tests have examples on how to use the code.
+* `make_graphs.sh` builds Figure 4, which is most likely to be useful in your research.
 * `data/` contains input data files, like the system AP scores for all artefact, challenger and champion systems.
 * `output/` contains generated output files (none so far).
 
