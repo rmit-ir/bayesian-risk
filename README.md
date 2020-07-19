@@ -6,6 +6,8 @@
 This is repository for the 2020 SIGIR paper "Bayesian Inferential
 Risk Evaluation On Multiple IR Systems".
 
+Watch the YouTube video explaining this work [here](https://youtu.be/VwCSufd-ops).
+
 Reproducible parts of the paper will be released in stages, as they are 
 refactored out of system-specific bash/awk/R/python hacks from past papers
 and workarounds for lacking root access on shared compute resources.
